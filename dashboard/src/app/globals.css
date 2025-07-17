@@ -21,6 +21,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     --primary: #3772FF;
+    --menutext: #777E90;
     --font-sans: 'Poppins', sans-serif;
   }
 }
@@ -38,8 +39,14 @@ body {
 
 .selectedmenu {
   color: var(--primary);
-  font-weight: 500; /* Matches font-medium */
+  font-weight: 500; 
   border-width: 2px;
   border-color: var(--primary);
-  border-radius: 0.5rem; /* Matches rounded-lg */
+  border-radius: 0.5rem; 
+}
+
+.selectedsubmenu {
+  color: var(--primary);
+  font-weight: 500; 
+  border-color: var(--primary);
 }

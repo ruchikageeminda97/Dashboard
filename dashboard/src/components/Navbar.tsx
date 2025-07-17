@@ -24,7 +24,7 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Search tasks..."
-            className="p-2 w-60 pl-8 border rounded"
+            className="p-2 w-60 pl-8  rounded bg-[#F4F5F6]"
           />
           <FaSearch className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" size={14} />
         </div>
