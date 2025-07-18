@@ -3,7 +3,7 @@ import Swimlane from "@/components/Swimlane";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="h-screen overflow-auto">
       <Hero />
       <Swimlane/>
     </div>

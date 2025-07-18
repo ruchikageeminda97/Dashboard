@@ -9,8 +9,8 @@ interface AssignedIconsProps {
 }
 
 const AssignedIcons: React.FC<AssignedIconsProps> = ({ count }) => {
-  const baseIcons = 3; 
-  const extraCount = Math.max(0, count - baseIcons); 
+  const baseIcons = 3;
+  const extraCount = Math.max(0, count - baseIcons);
 
   return (
     <div className="flex items-center">
@@ -46,13 +46,13 @@ export default function Hero() {
         <div className="flex items-center gap-[18px] mt-2 ">
           <h1 className="text-[var(--gray)] text-[16px]">assigned</h1>
           <AssignedIcons count={5} />
-                   <div className="w-[100px] h-[30px] text-[var(--gray)] border-[var(--boader)] border-2 rounded-full flex items-center justify-center text-[12px]">
-      Manage <GoPencil className="ml-1 text-[12px] text-[var(--gray)]" />
-    </div>
- 
+          <div className="w-[100px] h-[30px] text-[var(--gray)] border-[var(--boader)] border-2 rounded-full flex items-center justify-center text-[12px]">
+            Manage <GoPencil className="ml-1 text-[12px] text-[var(--gray)]" />
+          </div>
+
         </div>
-        
-        <div className="border-b-2 border-[var(--boader)] mt-6"/>
+
+        <div className="border-b-2 border-[var(--boader)] mt-6" />
 
         <p className="text-[var(--gray)] text-[14px] mt-4">Last updated on: 04 April, 2022</p>
       </div>

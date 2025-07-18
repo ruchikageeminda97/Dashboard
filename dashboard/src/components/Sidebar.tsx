@@ -43,7 +43,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/dashboard"
-            className={`p-2 text-[var(--gray)] rounded flex items-center ${pathname === '/dashboard' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--menutextgray)] rounded flex items-center ${pathname === '/dashboard' ? 'selectedmenu' : ''}`}
           >
             <RxDashboard size={18} className="mr-2" /> Dashboard
           </Link>
@@ -51,7 +51,7 @@ export default function Sidebar() {
         <li>
           <button
             onClick={() => setBoardOpen(!boardOpen)}
-            className={`w-full text-[var(--gray)]   text-left p-2 hover:bg-gray-100 rounded flex items-center justify-between ${pathname === '/' ? 'selectedmenu' : ''}`}
+            className={`w-full text-[var(--menutextgray)]   text-left p-2 hover:bg-gray-100 rounded flex items-center justify-between ${pathname === '/' ? 'selectedmenu' : ''}`}
           >
             <span className="flex items-center">
               <FaRegFolder size={18} className="mr-2" /> Boards
@@ -108,7 +108,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/messages"
-            className={`p-2 text-[var(--gray)] hover:bg-gray-100 rounded flex items-center ${pathname === '/messages' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--menutextgray)] hover:bg-gray-100 rounded flex items-center ${pathname === '/messages' ? 'selectedmenu' : ''}`}
           >
             <AiOutlineMessage size={18} className="mr-2" /> Messages
             <span className="ml-2 bg-orange-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
@@ -117,7 +117,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/calendar"
-            className={`p-2 text-[var(--gray)] rounded flex items-center ${pathname === '/calendar' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--menutextgray)] rounded flex items-center ${pathname === '/calendar' ? 'selectedmenu' : ''}`}
           >
             <FaRegCalendarAlt size={18} className="mr-2" /> Calendar
           </Link>
@@ -125,7 +125,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/team-members"
-            className={`p-2 text-[var(--gray)] rounded flex items-center ${pathname === '/team-members' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--menutextgray)] rounded flex items-center ${pathname === '/team-members' ? 'selectedmenu' : ''}`}
           >
             <LuUserRound size={18} className="mr-2" /> Team Members
           </Link>
@@ -134,7 +134,7 @@ export default function Sidebar() {
       <div className="absolute bottom-[12%] w-[90%]">
         <Link
           href="/support"
-          className="p-2 text-[var(--gray)] rounded flex items-center"
+          className="p-2 text-[var(--menutextgray)] rounded flex items-center"
         >
         
 

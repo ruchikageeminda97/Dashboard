@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "title": "User Interview",
+    "priority": "low",
+    "dueDate": "243",
+    "assignedCount": 1,
+    "lane": "todo"
+  },
+  {
+    "id": "2",
+    "title": "Design System",
+    "priority": "medium",
+    "dueDate": "243",
+    "assignedCount": 4,
+    "reports": "2 Reports",
+    "lane": "todo"
+  },
+  {
+    "id": "3",
+    "title": "UI Design",
+    "priority": "high",
+    "assignedCount": 2,
+    "lane": "inprogress"
+  },
+  {
+    "id": "4",
+    "title": "Check Clients Feedback",
+    "priority": "low",
+    "assignedCount": 5,
+    "dueDate": "22 April 2022",
+    "image": true,
+    "lane": "inprogress"
+  },
+  {
+    "id": "5",
+    "title": "Prototype",
+    "priority": "low",
+    "assignedCount": 5,
+    "dueDate": "243",
+    "lane": "approved"
+  },
+  {
+    "id": "6",
+    "title": "Detail Page",
+    "priority": "low",
+    "dueDate": "243",
+    "assignedCount": 3,
+    "lane": "approved"
+  },
+  {
+    "id": "7",
+    "title": "Animation preloader",
+    "priority": "high",
+    "dueDate": "243",
+    "assignedCount": 4,
+    "lane": "approved"
+  },
+  {
+    "id": "8",
+    "title": "Group Management",
+    "priority": "low",
+    "assignedCount": 3,
+    "dueDate": "329",
+    "lane": "reject"
+  },
+  {
+    "id": "9",
+    "title": "Slider controls",
+    "priority": "low",
+    "assignedCount": 2,
+    "dueDate": "243",
+    "lane": "reject"
+  }
+]
