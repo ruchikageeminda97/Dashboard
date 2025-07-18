@@ -2,9 +2,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #F4F5F6;
   --foreground: #171717;
+  --white: #FFFFFF;
   --primary: #3772FF;
+  --orange: #FFA800;
+  --gray:#B1B5C3;
+  --boader:#E6E8EC;
+  --green:#AEE753;
+  --red:#F90430;
+
+
   --font-sans: 'Poppins', sans-serif;
 }
 

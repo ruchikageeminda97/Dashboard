@@ -10,7 +10,7 @@ import { FaPlus, FaSearch } from 'react-icons/fa';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white border-b-2 border-[#E6E8EC] p-4 flex justify-between items-center">
+    <nav className="bg-white border-b-2 border-[var(--boader)] p-4 flex justify-between items-center">
       <div className="flex items-center">
         <span className="text-xl font-bold">
           <img src={logo.src} alt="Logo" className="h-6 w-auto ml-6" />

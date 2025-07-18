@@ -19,14 +19,14 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <div className="w-72 relative bg-white border-r-2 border-[#E6E8EC] p-4 h-screen">
-      <div className="relative border-2 rounded-lg border-[#E6E8EC] pb-4">
+    <div className="w-72 relative bg-white border-r-2 border-[var(--boader)] p-4 h-screen">
+      <div className="relative border-2 rounded-lg border-[var(--boader)] pb-4">
         <button
           onClick={() => setWorkspaceOpen(!workspaceOpen)}
           className="w-full text-left p-2 hover:bg-gray-100 rounded flex items-center justify-between"
         >
-          <span className="flex items-center">
-            <span className="w-6 h-6 bg-gray-300 rounded-full mr-2"></span> Workspace
+          <span className="flex items-center text-[var(--gray)]">
+            <span className="w-6 h-6  bg-gray-300 rounded-full mr-2"></span> Workspace
           </span>
           <MdKeyboardArrowDown
             className={`transition-transform ${workspaceOpen ? 'rotate-180' : ''}`}
@@ -35,15 +35,15 @@ export default function Sidebar() {
         </button>
         {workspaceOpen && (
           <div className="ml-8 mt-2">
-            <Link href="/root-folder" className="block p-2 hover:bg-gray-100 rounded text-gray-600">Root Folder</Link>
+            <Link href="/root-folder" className="block p-2 hover:bg-gray-100 rounded text-black">Root Folder</Link>
           </div>
         )}
       </div>
-      <ul className="space-y-2 mt-4">
+      <ul className="space-y-1 mt-4">
         <li>
           <Link
             href="/dashboard"
-            className={`p-2 text-[#777E90] rounded flex items-center ${pathname === '/dashboard' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--gray)] rounded flex items-center ${pathname === '/dashboard' ? 'selectedmenu' : ''}`}
           >
             <RxDashboard size={18} className="mr-2" /> Dashboard
           </Link>
@@ -51,7 +51,7 @@ export default function Sidebar() {
         <li>
           <button
             onClick={() => setBoardOpen(!boardOpen)}
-            className={`w-full text-[#777E90]   text-left p-2 hover:bg-gray-100 rounded flex items-center justify-between ${pathname === '/' ? 'selectedmenu' : ''}`}
+            className={`w-full text-[var(--gray)]   text-left p-2 hover:bg-gray-100 rounded flex items-center justify-between ${pathname === '/' ? 'selectedmenu' : ''}`}
           >
             <span className="flex items-center">
               <FaRegFolder size={18} className="mr-2" /> Boards
@@ -62,10 +62,10 @@ export default function Sidebar() {
             />
           </button>
           {boardOpen && (
-            <div className=" mt-2 text-[14px] space-y-1 border-2 border-gray-200 rounded-lg p-2">
+            <div className=" mt-2 text-[14px] space-y-1 border-2 border-[var(--boader)] rounded-lg p-2">
               <Link
                 href="/boards/create-routes"
-                className={`flex items-center p-2  hover:bg-gray-100 rounded ${pathname === '/boards/create-routes' ? 'selectedsubmenu' : 'text-[#777E90]'}`}
+                className={`flex items-center p-1  hover:bg-gray-100 rounded ${pathname === '/boards/create-routes' ? 'selectedsubmenu' : 'text-[var(--gray)]'}`}
               >
                   <MdKeyboardArrowLeft
               className={ `transition-transform ${boardOpen ? 'rotate-180 mr-2' : 'mr-2'}`}
@@ -75,7 +75,7 @@ export default function Sidebar() {
               </Link>
               <Link
                 href="/boards/development-react-app"
-                className={`flex items-center  p-2 hover:bg-gray-100 rounded ${pathname === '/boards/development-react-app' ? 'selectedsubmenu' : 'text-[#777E90]'}`}
+                className={`flex items-center  p-1 hover:bg-gray-100 rounded ${pathname === '/boards/development-react-app' ? 'selectedsubmenu' : 'text-[var(--gray)]'}`}
               >
                 <MdKeyboardArrowLeft
               className={ `transition-transform ${boardOpen ? 'rotate-180 mr-2' : 'mr-2'}`}
@@ -85,7 +85,7 @@ export default function Sidebar() {
               </Link>
               <Link
                 href="/"
-                className={`flex items-center p-2 hover:bg-gray-100 rounded ${pathname === '/' ? 'selectedsubmenu' : 'text-[#777E90]'}`}
+                className={`flex items-center p-1 hover:bg-gray-100 rounded ${pathname === '/' ? 'selectedsubmenu' : 'text-[var(--gray)]'}`}
               >
                 <MdKeyboardArrowLeft
               className={ `transition-transform ${boardOpen ? 'rotate-180 mr-2' : 'mr-2'}`}
@@ -95,7 +95,7 @@ export default function Sidebar() {
               </Link>
               <Link
                 href="/boards/wordpress-theme"
-                className={`flex items-center p-2 hover:bg-gray-100 rounded ${pathname === '/boards/wordpress-theme' ? 'selectedsubmenu' : 'text-[#777E90]'}`}
+                className={`flex items-center p-1 hover:bg-gray-100 rounded ${pathname === '/boards/wordpress-theme' ? 'selectedsubmenu' : 'text-[var(--gray)]'}`}
               > <MdKeyboardArrowLeft
               className={ `transition-transform ${boardOpen ? 'rotate-180 mr-2' : 'mr-2'}`}
               size={16}
@@ -108,7 +108,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/messages"
-            className={`p-2 text-[#777E90] hover:bg-gray-100 rounded flex items-center ${pathname === '/messages' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--gray)] hover:bg-gray-100 rounded flex items-center ${pathname === '/messages' ? 'selectedmenu' : ''}`}
           >
             <AiOutlineMessage size={18} className="mr-2" /> Messages
             <span className="ml-2 bg-orange-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
@@ -117,7 +117,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/calendar"
-            className={`p-2 text-[#777E90] rounded flex items-center ${pathname === '/calendar' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--gray)] rounded flex items-center ${pathname === '/calendar' ? 'selectedmenu' : ''}`}
           >
             <FaRegCalendarAlt size={18} className="mr-2" /> Calendar
           </Link>
@@ -125,7 +125,7 @@ export default function Sidebar() {
         <li>
           <Link
             href="/team-members"
-            className={`p-2 text-[#777E90] rounded flex items-center ${pathname === '/team-members' ? 'selectedmenu' : ''}`}
+            className={`p-2 text-[var(--gray)] rounded flex items-center ${pathname === '/team-members' ? 'selectedmenu' : ''}`}
           >
             <LuUserRound size={18} className="mr-2" /> Team Members
           </Link>
@@ -134,7 +134,7 @@ export default function Sidebar() {
       <div className="absolute bottom-[12%] w-[90%]">
         <Link
           href="/support"
-          className="p-2 text-[#777E90] rounded flex items-center"
+          className="p-2 text-[var(--gray)] rounded flex items-center"
         >
         
 
